@@ -10,4 +10,4 @@ define('DB_CHARSET', 'utf8');
 define('APP_ROOT', dirname(dirname(__FILE__)));
 
 // URL Root
-define('URL_ROOT', $_SERVER['SERVER_NAME']);
+define('URL_ROOT', "");
