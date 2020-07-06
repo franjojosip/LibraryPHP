@@ -9,9 +9,9 @@ class Core
     {
         $url = $this->getUrl();
 
-        if (ucwords($url[0]) !== null) {
+        if (ucwords($url[0]) != null) {
             // Look in controllers for first value
-            if (file_exists('' . ucwords($url[0]) . '.php')) {
+            if (file_exists('././././' . ucwords($url[0]) . '.php')) {
                 // If exists, set as controller
                 $this->currentController = ucwords($url[0]);
                 // Unset 0 url
@@ -21,7 +21,7 @@ class Core
 
 
         // Require the controller
-        require_once './../' . $this->currentController . '.php';
+        require_once '.././' . $this->currentController . '.php';
 
         // Instantiate controller class
         $this->currentController =  new $this->currentController;
