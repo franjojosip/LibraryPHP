@@ -9,12 +9,14 @@ class Core
     {
         $url = $this->getUrl();
 
-        
-        if (file_exists($_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . ucwords($url[0]) . '.php')) {
-            // If exists, set as controller
-            $this->currentController = ucwords($url[0]);
-            // Unset 0 url
-            unset($url[0]);
+        if ($url != null) {
+            // Look in controllers for first value
+            if (file_exists($_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . ucwords($url[0]) . '.php')) {
+                // If exists, set as controller
+                $this->currentController = ucwords($url[0]);
+                // Unset 0 url
+                unset($url[0]);
+            }
         }
 
 
