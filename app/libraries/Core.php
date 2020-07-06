@@ -10,13 +10,11 @@ class Core
         $url = $this->getUrl();
 
         // Look in controllers for first value
-        if(ucwords($url[0]) !== null){
-            if (file_exists('../../controllers/' . ucwords($url[0]) . '.php')) {
-                // If exists, set as controller
-                $this->currentController = ucwords($url[0]);
-                // Unset 0 url
-                unset($url[0]);
-            }
+        if (file_exists('../../controllers/' . ucwords($url[0]) . '.php')) {
+            // If exists, set as controller
+            $this->currentController = ucwords($url[0]);
+            // Unset 0 url
+            unset($url[0]);
         }
 
         // Require the controller
