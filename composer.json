@@ -1,7 +1,6 @@
 {
-	"scripts": {
-		"post-install-cmd": [
-			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
-		]
-	}
+    "require": {},
+    "config": {
+        "optimize-autoloader": true
+    }
 }
