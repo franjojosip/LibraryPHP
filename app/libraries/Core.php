@@ -9,7 +9,7 @@ class Core
     {
         $url = $this->getUrl();
 
-        if ($url[0] != null) {
+        if ($url != null) {
             // Look in controllers for first value
             if (file_exists($_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . ucwords($url[0]) . '.php')) {
                 // If exists, set as controller
