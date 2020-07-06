@@ -9,6 +9,6 @@ require_once '../app/helpers/session_helper.php';
 
 
 // Load libraries
-require_once '../app/helpers/libraries/Core.php';
-require_once '../app/helpers/libraries/Controller.php';
-require_once '../app/helpers/libraries/Database.php';
+require_once '../app/libraries/Core.php';
+require_once '../app/libraries/Controller.php';
+require_once '../app/libraries/Database.php';
