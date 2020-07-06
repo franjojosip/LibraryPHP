@@ -20,7 +20,7 @@ class Controller
   {
     // Check for view file
     if (file_exists($_SERVER["DOCUMENT_ROOT"].'/app/views/' . $view . '.php')) {
-      require_once('../app/views/' . $view . '.php');
+      require_once($_SERVER["DOCUMENT_ROOT"].'/app/views/' . $view . '.php');
     } else {
       /// View does not exists
       die('View does not exists');
