@@ -1,4 +1,5 @@
 <IfModule mod_rewrite.c>
+  DirectoryIndex index.php
   Options -Multiviews
   RewriteEngine On
   RewriteBase /knjiznica/public
