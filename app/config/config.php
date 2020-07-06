@@ -10,4 +10,4 @@ define('DB_CHARSET', 'utf8');
 define('APP_ROOT', dirname(dirname(__FILE__)));
 
 // URL Root
-define('URL_ROOT', 'http://localhost:8080/LibraryPHP');
+define('URL_ROOT', 'http://localhost:8080/knjiznica');

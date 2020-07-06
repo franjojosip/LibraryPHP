@@ -76,7 +76,7 @@ a.nav-link:hover {
 .column-center {
   padding-top: 10px;
   flex: 50%;
-  min-width: 500px;
+  min-width: 600px;
 }
 
 #top-pick,
@@ -105,10 +105,18 @@ p {
   font-family: "Milo-Light-Italic", "serif";
 }
 
-@media screen and (max-width: 1200px) {
-  .row {
-    flex-direction: column;
+.card-img{
+  height: 200px !important;
+}
+
+@media screen and (max-width: 600px) {
+  .column-center{
+    min-width: 0 !important;
   }
+  .card-img{
+    height: 200px !important;
+  }
+  
 }
 
 .card-img {
