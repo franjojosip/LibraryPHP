@@ -1,5 +1,5 @@
-        <div class="footer">
-            <p>Copyright @2020 FJJukic</p>
-        </div>
+        <footer>
+            Copyright @2020 FJJukic
+        </footer>
     </body>
 </html>

@@ -44,42 +44,55 @@
 <br>
 <hr />
 <h3 id="activitiesHeader">Library Activites & Groups</h3>
-<div class="card-columns">
-    <div class="card w-100 mb-2">
-        <div class="card-body">
-            <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/community.jpeg" alt="Card image cap">
-            <h5 class="card-title mt-2 mb-0">COVID-19: Community Support Resource</h5>
+
+<ul class="flex-container wrap">
+    <li class="flex-item">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/community.jpeg" alt="Card image cap">
+                <h5 class="card-title mt-2 mb-0">COVID-19: Community Support Resource</h5>
+            </div>
         </div>
-    </div>
-    <div class="card w-100 mb-2">
-        <div class="card-body">
-            <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/get_help.jpeg" alt="Card image cap">
-            <h5 class="card-title mt-2 mb-0">Get Help: Ask PLMikanovci</h5>
+    </li>
+    <li class="flex-item">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/get_help.jpeg" alt="Card image cap">
+                <h5 class="card-title mt-2 mb-0">Get Help: Ask PLMikanovci</h5>
+            </div>
         </div>
-    </div>
-    <div class="card w-100 mb-2">
-        <div class="card-body">
-            <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/online_classes.jpeg" alt="Card image cap">
-            <h5 class="card-title mt-2 mb-0">Online classes & Events</h5>
+    </li>
+    <li class="flex-item">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/online_classes.jpeg" alt="Card image cap">
+                <h5 class="card-title mt-2 mb-0">Online classes & Events</h5>
+            </div>
         </div>
-    </div>
-    <div class="card w-100 mb-2">
-        <div class="card-body">
-            <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/e_books.jpeg" alt="Card image cap">
-            <h5 class="card-title mt-2 mb-0">E-Books & More</h5>
+    </li>
+    <li class="flex-item">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/e_books.jpeg" alt="Card image cap">
+                <h5 class="card-title mt-2 mb-0">E-Books & More</h5>
+            </div>
         </div>
-    </div>
-    <div class="card w-100 mb-2">
-        <div class="card-body">
-            <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/remote.png" alt="Card image cap">
-            <h5 class="card-title mt-2 mb-0">Remote Learning Support for Kids, Teens</h5>
+    </li>
+    <li class="flex-item">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/remote.png" alt="Card image cap">
+                <h5 class="card-title mt-2 mb-0">Remote Learning Support for Kids, Teens</h5>
+            </div>
         </div>
-    </div>
-    <div class="card w-100 mb-2">
-        <div class="card-body">
-            <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/newspapers.jpeg" alt="Card image cap">
-            <h5 class="card-title mt-2 mb-0">Newspapers, Magazines & Databases</h5>
+    </li>
+    <li class="flex-item">
+        <div class="card">
+            <div class="card-body">
+                <img class="card-img" src="<?php echo URL_ROOT; ?>/public/images/newspapers.jpeg" alt="Card image cap">
+                <h5 class="card-title mt-2 mb-0">Newspapers, Magazines & Databases</h5>
+            </div>
         </div>
-    </div>
-</div>
+    </li>
+</ul>
 <?php require APP_ROOT . '/views/inc/footer.php' ?>

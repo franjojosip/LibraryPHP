@@ -10,4 +10,6 @@ define('DB_CHARSET', 'utf8');
 define('APP_ROOT', dirname(dirname(__FILE__)));
 
 // URL Root
-define('URL_ROOT', "https://" . $_SERVER['SERVER_NAME'] . $_SERVER['REQUEST_URI']);
+define('URL_ROOT', "http://localhost:8081/knjiznica");
+
+//echo $_SERVER['SERVER_NAME']; //Outputs www.example.com

@@ -82,7 +82,6 @@ a.nav-link:hover {
 #top-pick,
 #staff-pick {
   width: 100%;
-  height: 100%;
   padding-bottom: 10px;
 }
 
@@ -90,33 +89,48 @@ a.nav-link:hover {
   height: 50%;
   width: 100%;
 }
-
-.flex-wrap {
-  flex-wrap: wrap !important;
+.flex-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
 }
-.d-flex {
-  display: -webkit-box !important;
-  display: flex !important;
-  overflow: hidden;
+.wrap {
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.wrap li {
+  margin: 40px auto;
+  width:577px;
+  height: 331px;
 }
 
+.card-img {
+  padding: 5px;
+  width: max-content;
+  height: max-content;
+
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
 p {
   font-size: 20px;
   font-family: "Milo-Light-Italic", "serif";
 }
 
-.card-img{
-  height: 200px !important;
-}
-
 @media screen and (max-width: 600px) {
-  .column-center{
+  .column-center {
     min-width: 0 !important;
-  }
-  .card-img{
-    height: 200px !important;
-  }
-  
+  } 
 }
 
 .card-img {
@@ -142,19 +156,16 @@ hr {
   padding: 0;
 }
 
-.footer {
+footer {
   position: bottom;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 70px;
   text-align: center;
   margin-bottom: 20px;
 }
-.footer p {
-  margin-bottom: 0;
-}
 
 .card-columns {
-  margin: 20px 50px 20px 50px;
+  margin: 20px 80px 20px 80px;
 }
 
 .navbar-text {

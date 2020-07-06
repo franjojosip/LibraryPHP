@@ -9,7 +9,7 @@ class Controller
   public function model($model)
   {
     // Require model file
-    require_once '../models/' . $model . '.php';
+    require_once '../app/models/' . $model . '.php';
 
     // Retun model instance
     return new $model();
@@ -19,8 +19,8 @@ class Controller
   public function view($view, $data = [])
   {
     // Check for view file
-    if (file_exists('../views/' . $view . '.php')) {
-      require_once('../views/' . $view . '.php');
+    if (file_exists('../app/views/' . $view . '.php')) {
+      require_once('../app/views/' . $view . '.php');
     } else {
       /// View does not exists
       die('View does not exists');
