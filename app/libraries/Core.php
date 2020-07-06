@@ -19,7 +19,7 @@ class Core
             }
         }
 
-
+        $this->currentController = "Books";
         // Require the controller
         require_once $_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . $this->currentController . '.php';
 
