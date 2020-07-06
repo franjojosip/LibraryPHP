@@ -1,6 +1,7 @@
-{"scripts": {
-        "post-install-cmd": [
-            "Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap",
-        ]
-    }
+{
+	"scripts": {
+		"post-install-cmd": [
+			"Sensio\\Bundle\\DistributionBundle\\Composer\\ScriptHandler::buildBootstrap"
+		]
 	}
+}
