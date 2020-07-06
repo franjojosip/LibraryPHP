@@ -1,6 +1,7 @@
 <?php
 
-    //Url redirect
-    function redirect( $page ){
-        header('Location: ' .URL_ROOT . '/' . $page);
-    }
+//Url redirect
+function redirect($page)
+{
+    header('Location: ' . $_SERVER["DOCUMENT_ROOT"] . '/' . $page);
+}
