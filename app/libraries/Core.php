@@ -7,7 +7,7 @@ class Core
 
     public function __construct()
     {
-        $url = array_shift(explode('?', $_SERVER['REQUEST_URI']));
+        $url = $this->getUrl();
 
         if ($url != null) {
             // Look in controllers for first value
