@@ -21,7 +21,7 @@ class Core
 
 
         // Require the controller
-        require_once $_SERVER["DOCUMENT_ROOT"]. '//controllers/' . $this->currentController . '.php';
+        require_once $_SERVER["DOCUMENT_ROOT"]. '/controllers/' . $this->currentController . '.php';
 
         // Instantiate controller class
         $this->currentController =  new $this->currentController;
