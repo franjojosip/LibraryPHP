@@ -34,10 +34,10 @@
                     </td>
                     <?php if (isset($_SESSION['user_id'])) : ?>
                         <td data-label="Edit">
-                            <?= "<a href='/genres/edit/{$row->id}' class='edit' title='Edit' data-toggle='tooltip'><i class='material-icons'>&#xE254;</i></a>" ?>
+                            <?= "<a href=" . URL_ROOT . "/genres/edit/{$row->id} class='edit' title='Edit' data-toggle='tooltip'><i class='material-icons'>&#xE254;</i></a>" ?>
                         </td>
                         <td data-label="Delete">
-                            <?= "<a href='/genres/delete/{$row->id}' class='delete' onclick='return confirm(\"Do you want to delete this record?\")' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>" ?>
+                            <?= "<a href='" . URL_ROOT . "/genres/delete/{$row->id}' class='delete' onclick='return confirm(\"Do you want to delete this record?\")' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>" ?>
                         </td>
                     <?php endif; ?>
                 </tr>

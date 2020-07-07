@@ -1,5 +1,9 @@
 <?php require APP_ROOT . '/views/inc/header.php' ?>
 <link rel="stylesheet" href="<?php echo URL_ROOT; ?>/public/css/books.css">
+
+<div class="row">
+   <a id="btnBack" href="<?php echo URL_ROOT; ?>/users" class="btn btn-outline-secondary"><i class="fa fa-backward"></i> Back</a>
+</div>
 <div class="row">
     <div class="col-md-6 mx-auto">
         <div class="card card-body bg-light mt-5">

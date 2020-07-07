@@ -12,7 +12,7 @@
       <div class="card card-body bg-light mt-5">
          <h3>Add Book</h3>
          <p>Create a new book</p>
-         <form action="/books/add" method="post">
+         <form action="<?php echo URL_ROOT; ?>/books/add" method="post">
             <div class="form-group">
                <label for="name">Book title: </label>
                <input type="text" name="name" class="form-control form-control" required>
