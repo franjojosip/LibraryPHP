@@ -3,6 +3,4 @@
   RewriteEngine On
   RewriteRule ^$ public/ [L]
   RewriteRule (.*)$ public/$1 [L]
-  RewriteRule ^/pages/books?$ books.php
-
 </IfModule>

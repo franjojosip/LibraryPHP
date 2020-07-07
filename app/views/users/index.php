@@ -21,7 +21,7 @@
                     <td data-label="Username"><?php echo $user->name; ?></td>
                     <td data-label="Email"><?php echo $user->email; ?></td>
                     <td data-label="Delete">
-                        <?= "<a href='users/delete/{$user->id}' class='delete' onclick='return confirm(\"Do you want to delete this record?\")' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>" ?>
+                        <?= "<a href='/users/delete/{$user->id}' class='delete' onclick='return confirm(\"Do you want to delete this record?\")' title='Delete' data-toggle='tooltip'><i class='material-icons'>&#xE872;</i></a>" ?>
                     </td>
                 </tr>
             <?php endforeach; ?>

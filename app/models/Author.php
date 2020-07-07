@@ -38,7 +38,6 @@ class Author
 
     public function add($data)
     {
-        print_r($data);
         $this->db->query('INSERT INTO authors (name, dateCreated) VALUES (:name, now())');
         $this->db->bind(':name', $data['name']);
 
@@ -51,7 +50,7 @@ class Author
 
     public function put($data)
     {
-        $this->db->query('UPDATE authors SET name = :name WHERE ID = :id');
+        $this->db->query('UPDATE authors SET name = :name WHERE id = :id');
         $this->db->bind(':id', $data['id']);
         $this->db->bind(':name', $data['name']);
 

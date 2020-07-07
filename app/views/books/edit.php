@@ -4,7 +4,7 @@
 <?php flash('books_message'); ?>
 
 <div class="row">
-   <a id="btnBack" href="<?php echo URL_ROOT; ?>/pages/books" class="btn btn-outline-secondary"><i class="fa fa-backward"></i> Back</a>
+   <a id="btnBack" href="/pages/books" class="btn btn-outline-secondary"><i class="fa fa-backward"></i> Back</a>
 </div>
 
 <div class="row">

@@ -14,8 +14,8 @@ class Book
     {
         $this->db->query('SELECT b.ID AS book_id, b.name AS book_name, a.name as author_name, g.name AS genre_name, b.dateCreated AS date_created
                                  FROM books b
-                                 LEFT JOIN Genres g ON g.ID = b.genreID
-                                 LEFT JOIN Authors a ON a.ID = b.authorID
+                                 LEFT JOIN genres g ON g.ID = b.genreID
+                                 LEFT JOIN authors a ON a.ID = b.authorID
                                  ORDER BY b.ID ASC');
         return $this->db->resultSet();
     }
@@ -43,7 +43,7 @@ class Book
 
     public function add($data)
     {
-        $this->db->query('INSERT INTO books (name, authorid, genreid, dateCreated) VALUES (:name, :authorid, :genreid, now())');
+        $this->db->query('INSERT INTO books (name, authorID, genreID, dateCreated) VALUES (:name, :authorid, :genreid, now())');
         $this->db->bind(':name', $data['name']);
         $this->db->bind(':authorid', $data['authorID']);
         $this->db->bind(':genreid', $data['genreID']);

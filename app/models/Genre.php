@@ -12,7 +12,7 @@ class Genre
 
     public function getAll()
     {
-        $this->db->query('SELECT * FROM genres ORDER BY id ASC');
+        $this->db->query('SELECT * FROM genres ORDER BY ID ASC');
         return $this->db->resultSet();
     }
 
@@ -34,7 +34,6 @@ class Genre
 
     public function add($data)
     {
-        print_r($data);
         $this->db->query('INSERT INTO genres (name, dateCreated) VALUES (:name, now())');
         // Bind values
         $this->db->bind(':name', $data['name']);
@@ -63,7 +62,7 @@ class Genre
 
     public function delete($id)
     {
-        $this->db->query('DELETE FROM genres WHERE id = :id');
+        $this->db->query('DELETE FROM genres WHERE ID = :id');
         // Bind values
         $this->db->bind(':id', $id);
 

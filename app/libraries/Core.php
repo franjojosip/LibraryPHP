@@ -9,19 +9,16 @@ class Core
     {
         $url = $this->getUrl();
 
-        if ($url != null) {
-            // Look in controllers for first value
-            if (file_exists($_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . ucwords($url[0]) . '.php')) {
-                // If exists, set as controller
-                $this->currentController = ucwords($url[0]);
-                // Unset 0 url
-                unset($url[0]);
-            }
+        // Look in controllers for first value
+        if (file_exists($_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . ucwords($url[0]) . '.php')) {
+            // If exists, set as controller
+            $this->currentController = ucwords( $url[0] );
+            // Unset 0 url
+            unset($url[0]);
         }
 
-        $this->currentController = "Books";
         // Require the controller
-        require_once $_SERVER["DOCUMENT_ROOT"]. './controllers/' . $this->currentController . '.php';
+        require_once $_SERVER["DOCUMENT_ROOT"]. '/app/controllers/' . $this->currentController . '.php';
 
         // Instantiate controller class
         $this->currentController =  new $this->currentController;
@@ -41,7 +38,7 @@ class Core
         call_user_func_array([$this->currentController, $this->currentMethod], $this->params);
     }
 
-    public function  getUrl()
+    public function getUrl()
     {
         if (isset($_GET['url'])) {
             $url = rtrim($_GET['url'], '/');
